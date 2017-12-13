@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Game Over </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+
+//gameover text
+var gameover_text = new sjs.Text("TRY AGAIN?", 28, "purple");
+gameover_text.centerH();
+
+//restart button
+var restartBtn = new sjs.Button("Restart", function(){
+	window.location = "pong.html";
+});
+restartBtn.center();
+
+//menu button
+var menuBtn = new sjs.Button("Menu", function(){
+	window.location = "index.html";
+});
+menuBtn.moveTo(220, 240);
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Game Over! </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>

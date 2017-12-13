@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+
+//Menu Text
+var menu_text = new sjs.Text("MENU", 28, "blue");
+menu_text.centerH();
+
+//Start button
+var startBtn = new sjs.Button("Start", function(){
+	window.location = "pong.html";
+});
+startBtn.center();
+
+//Credits
+var credits = new sjs.Text("Created by Davis Heninger", 28, "white");
+credits.bottom();
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
